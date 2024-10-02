@@ -22,11 +22,11 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-customers_df = pd.read_csv('../data/customers_dataset.csv')
-sellers_df = pd.read_csv('../data/sellers_dataset.csv')
-geolocation_df = pd.read_csv('../data/geolocation_dataset.csv')
-products_df = pd.read_csv('../data/products_dataset.csv')
-order_items_df = pd.read_csv('../data/order_items_dataset.csv')
+customers_df = pd.read_csv('data/customers_dataset.csv')
+sellers_df = pd.read_csv('data/sellers_dataset.csv')
+geolocation_df = pd.read_csv('data/geolocation_dataset.csv')
+products_df = pd.read_csv('data/products_dataset.csv')
+order_items_df = pd.read_csv('data/order_items_dataset.csv')
 
 geolocation_df.drop_duplicates(inplace=True)
 products_df['product_name_lenght'] = products_df['product_name_lenght'].fillna(products_df['product_name_lenght'].median())
